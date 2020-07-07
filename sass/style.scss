@@ -151,7 +151,6 @@ body {
 }
 
 .box {
-    flex: 0 0 33.333%;
     line-height: 1.5;
     position: relative;
     text-align: center;
@@ -233,29 +232,9 @@ footer .fab {
 }
 
 
-/* dlaczego nie moge wycentrowac ikon w pionie, co zle robie*/
-
-
 /* Media */
 
 @media (max-width: 767px) {
-    .services-123 {
-        flex-direction: column;
-    }
-    .work-wrapper {
-        flex-direction: column;
-    }
-    .form-wrapper {
-        flex-direction: column;
-    }
-    .work-pic img {
-        width: 100%;
-        /*obrazek nie rozciaga sie na cala szerokosc ekranu tel.*/
-        height: 150px;
-    }
-    .work-box {
-        flex-direction: column;
-    }
     .navigation li {
         margin: 0;
     }
@@ -264,6 +243,10 @@ footer .fab {
         line-height: 100%;
     }
     .page-title {
-        font-size: 50px;
+        font-size: 60px;
+        word-spacing: 3px;
+    }
+    footer span {
+        line-height: 100%;
     }
 }

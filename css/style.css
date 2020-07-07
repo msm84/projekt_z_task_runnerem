@@ -137,8 +137,6 @@ body {
 }
 
 .box {
-  -ms-flex: 0 0 33.333%;
-      flex: 0 0 33.333%;
   line-height: 1.5;
   position: relative;
   text-align: center;
@@ -213,30 +211,8 @@ footer .fab {
   border-radius: 50%;
 }
 
-/* dlaczego nie moge wycentrowac ikon w pionie, co zle robie*/
 /* Media */
 @media (max-width: 767px) {
-  .services-123 {
-    -ms-flex-direction: column;
-        flex-direction: column;
-  }
-  .work-wrapper {
-    -ms-flex-direction: column;
-        flex-direction: column;
-  }
-  .form-wrapper {
-    -ms-flex-direction: column;
-        flex-direction: column;
-  }
-  .work-pic img {
-    width: 100%;
-    /*obrazek nie rozciaga sie na cala szerokosc ekranu tel.*/
-    height: 150px;
-  }
-  .work-box {
-    -ms-flex-direction: column;
-        flex-direction: column;
-  }
   .navigation li {
     margin: 0;
   }
@@ -245,7 +221,11 @@ footer .fab {
     line-height: 100%;
   }
   .page-title {
-    font-size: 50px;
+    font-size: 60px;
+    word-spacing: 3px;
+  }
+  footer span {
+    line-height: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
