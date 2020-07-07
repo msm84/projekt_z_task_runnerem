@@ -195,67 +195,23 @@ body {
 
 .portfolio {
     margin-top: 50px;
-    background-color: rgb(238, 230, 230);
+    background-color: #f7f7f7;
 }
 
 .portfolio-header {
     text-align: center;
 }
 
-
-/* CONTACT */
-
-.formula {
-    padding-top: 30px;
-    background-color: $color-one;
-    color: $color-text;
+.porfolio-box {
+    text-align: center;
+    margin: 20px 0 20px 0;
 }
-
-.form-wrapper {
-    display: flex;
-}
-
-form {
-    flex-direction: column;
-    flex: 2;
-    margin-right: 90px;
-    color: $color-text;
-    border-color: $color-one;
-}
-
-.contact {
-    flex: 1;
-    line-height: 50%;
-    padding-bottom: 180px;
-}
-
-.contact-box {
-    padding-bottom: 10px;
-}
-
-input,
-textarea {
-    width: 100%;
-    background-color: $color-one;
-    color: $color-text;
-    border: none;
-    padding: 15px;
-}
-
-
-/*nie moge zrobic linii pod textarea*/
-
-
-/*input, textarea::after {
-    border-bottom: solid 4px white;   
-}*/
 
 
 /* FOOTER */
 
-.footer-wrapper {
-    text-align: center;
-    padding: 48px 0 48px 0;
+footer {
+    margin: 30px 0 30px 0;
 }
 
 footer ul {
@@ -271,17 +227,18 @@ footer li {
 
 footer a {
     text-decoration: none;
+    text-align: center;
 }
 
 
 /* zrobic dla chetnych */
 
 footer .fab {
-    font-size: 30px;
-    background: red;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+    font-size: 15px;
+    background: black;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
     color: white;
     border-radius: 50%;
 }
