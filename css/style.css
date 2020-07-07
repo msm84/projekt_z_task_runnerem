@@ -1,0 +1,303 @@
+/* Variables */
+/* Global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7px;
+  font-family: "Inconsolata", monospace;
+  color: #2c2c54;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 96px 0;
+}
+
+/*navigation*/
+.navigation {
+  padding: 12px 0;
+  background-image: url("../images/splash.png");
+}
+
+.navigation ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation li {
+  display: inline-block;
+  margin: 0 36px 0 0;
+  position: relative;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navigation a:hover {
+  color: #33d9b2;
+}
+
+.navigation ul ul li {
+  display: block;
+  margin: 0 0 12px 0;
+  padding: 10px 0;
+}
+
+.navigation ul li ul {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  padding-top: 12px;
+}
+
+.navigation li:hover ul {
+  display: block;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.navigation ul li ul a {
+  color: #0097e6;
+  display: block;
+  padding: 0 24px;
+}
+
+.navigation ul li ul a:hover {
+  color: #33d9b2;
+}
+
+/*Header*/
+.splash {
+  background-image: url("../images/splash.png");
+  color: #ffffff;
+  height: 500px;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.splash-inner {
+  margin: auto;
+  /*wysrodkowuje w pionie i poziomie jesli rodzic jest flex */
+  max-width: 70%;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 72px;
+  word-spacing: -24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.page-subtitle {
+  margin: 24px 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.page-title span {
+  font-family: "Signika", sans-serif;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 160px;
+  margin: 24px auto 0 auto;
+  padding: 16px;
+  border-radius: 5px;
+  font-family: "Inconsolata", monospace;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  background-color: inherit;
+  background-position: 100% 0;
+  background-size: 300%;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-position: 0 100%;
+  color: #ffffff;
+}
+
+/* our services */
+.services {
+  padding-top: 96px;
+}
+
+.services-header {
+  text-align: center;
+}
+
+.services-123 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.box {
+  -ms-flex: 0 0 33.333%;
+      flex: 0 0 33.333%;
+  line-height: 1.5;
+  position: relative;
+  text-align: center;
+}
+
+.box p:first-of-type {
+  font-weight: 800;
+}
+
+.sub-page-title {
+  font-size: 48px;
+}
+
+.box-title {
+  font-size: 24px;
+  margin: 0 0 12px 0;
+}
+
+/*portfolio*/
+.portfolio {
+  margin-top: 50px;
+  background-color: #eee6e6;
+}
+
+.portfolio-header {
+  text-align: center;
+}
+
+/* CONTACT */
+.formula {
+  padding-top: 30px;
+  background-color: #0097e6;
+  color: #ffffff;
+}
+
+.form-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+form {
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex: 2;
+      flex: 2;
+  margin-right: 90px;
+  color: #ffffff;
+  border-color: #0097e6;
+}
+
+.contact {
+  -ms-flex: 1;
+      flex: 1;
+  line-height: 50%;
+  padding-bottom: 180px;
+}
+
+.contact-box {
+  padding-bottom: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  background-color: #0097e6;
+  color: #ffffff;
+  border: none;
+  padding: 15px;
+}
+
+/*nie moge zrobic linii pod textarea*/
+/*input, textarea::after {
+    border-bottom: solid 4px white;   
+}*/
+/* FOOTER */
+.footer-wrapper {
+  text-align: center;
+  padding: 48px 0 48px 0;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+footer li {
+  display: inline-block;
+  font-size: 0;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+/* zrobic dla chetnych */
+footer .fab {
+  font-size: 30px;
+  background: red;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: white;
+  border-radius: 50%;
+}
+
+/* dlaczego nie moge wycentrowac ikon w pionie, co zle robie*/
+/* Media */
+@media (max-width: 767px) {
+  .services-123 {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .work-wrapper {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .form-wrapper {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .work-pic img {
+    width: 100%;
+    /*obrazek nie rozciaga sie na cala szerokosc ekranu tel.*/
+    height: 150px;
+  }
+  .work-box {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .navigation li {
+    margin: 0;
+  }
+  .page-subtitle,
+  .sub-page-title {
+    line-height: 100%;
+  }
+  .page-title {
+    font-size: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
