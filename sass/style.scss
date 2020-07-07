@@ -64,34 +64,10 @@ body {
     color: $color-two;
 }
 
-.navigation ul ul li {
-    display: block;
-    margin: 0 0 12px 0;
-    padding: 10px 0;
-}
-
-.navigation ul li ul {
-    display: none;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 20%);
-    padding-top: 12px;
-}
-
 .navigation li:hover ul {
     display: block;
     text-align: center;
     background-color: $color-text;
-}
-
-.navigation ul li ul a {
-    color: $color-one;
-    display: block;
-    padding: 0 24px;
-}
-
-.navigation ul li ul a:hover {
-    color: $color-two;
 }
 
 
@@ -100,7 +76,7 @@ body {
 .splash {
     background-image: url("../images/splash.png");
     color: $color-text;
-    height: 500px;
+    height: 530px;
     display: flex;
 }
 
@@ -108,9 +84,11 @@ body {
     margin: auto;
     /*wysrodkowuje w pionie i poziomie jesli rodzic jest flex */
     max-width: 70%;
+    text-align: center;
 }
 
 .page-title {
+    text-transform: uppercase;
     margin: 0;
     font-size: 72px;
     word-spacing: -24px;
@@ -119,29 +97,27 @@ body {
 }
 
 .page-subtitle {
+    font-style: italic;
     margin: 24px 0;
     font-weight: 400;
-    font-size: 16px;
-}
-
-.page-title span {
-    font-family: $font-text-2;
+    font-size: 30px;
 }
 
 .btn {
+    text-transform: uppercase;
     display: inline-block;
     min-width: 160px;
     margin: 24px auto 0 auto;
     padding: 16px;
-    border-radius: 5px;
+    border-radius: 3px;
     font-family: $font-text;
     font-size: 16px;
+    font-weight: 600;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
     border-width: 2px;
-    border-style: solid;
-    background-color: inherit;
+    background-color: orange;
     background-position: 100% 0;
     background-size: 300%;
     border-color: $color-text;
@@ -158,6 +134,10 @@ body {
 
 .services {
     padding-top: 96px;
+}
+
+.services-header p:first-of-type {
+    font-style: italic;
 }
 
 .services-header {
@@ -177,17 +157,13 @@ body {
     text-align: center;
 }
 
-.box p:first-of-type {
-    font-weight: 800;
-}
-
 .sub-page-title {
-    font-size: 48px;
+    font-size: 40px;
 }
 
-.box-title {
-    font-size: 24px;
-    margin: 0 0 12px 0;
+.box p:first-of-type {
+    font-size: small;
+    color: rgb(185, 185, 185);
 }
 
 
@@ -199,12 +175,25 @@ body {
 }
 
 .portfolio-header {
+    margin-top: 70px;
     text-align: center;
+}
+
+.portfolio p {
+    font-style: italic;
 }
 
 .porfolio-box {
     text-align: center;
     margin: 20px 0 20px 0;
+}
+
+.porfolio-box h1 {
+    font-size: 20px;
+}
+
+.bottom-box {
+    background-color: #ffffff;
 }
 
 
